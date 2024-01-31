@@ -1,14 +1,10 @@
 from fastapi import FastAPI
-from dotenv import dotenv_values
-from pymongo import MongoClient
-from routes import part_router, category_router
-
-config = dotenv_values(".env")
+from src.routes import part_router, category_router
+from src.database import client
 
 app = FastAPI()
 
 # Send a ping to confirm a successful connection
-client = MongoClient(config['MONGODB_URI'])
 try:
     client.admin.command('ping')
     print("Pinged your deployment. You successfully connected to MongoDB!")

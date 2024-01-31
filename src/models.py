@@ -1,6 +1,6 @@
 import uuid
 from pydantic import BaseModel, Field, field_validator
-from config.database import db
+from src.database import db
 
 
 class CategoryOut(BaseModel):

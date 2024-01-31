@@ -3,8 +3,8 @@ from typing import List
 from fastapi import APIRouter, Body, Response, HTTPException, status
 from fastapi.encoders import jsonable_encoder
 
-from config.database import db as database
-from models import CategoryIn, CategoryOut, CategoryUpdate, PartIn, PartOut, PartUpdate
+from src.database import db as database
+from src.models import CategoryIn, CategoryOut, CategoryUpdate, PartIn, PartOut, PartUpdate
 
 part_router = APIRouter()
 category_router = APIRouter()
