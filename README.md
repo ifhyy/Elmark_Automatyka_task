@@ -1,6 +1,6 @@
 # Elmark_Automatyka_task
 Rest API for Elmark Automatyka recruitment task. FastAPI was chosen as a main framework as it is a good solution for REST API development and Mongodb interaction.
-
+Author: Artem Stupak
 ## Setup instructions
 1. Clone this repository using git clone
 ```shell
